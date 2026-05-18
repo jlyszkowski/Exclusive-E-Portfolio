@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Lyszkowski</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b416518cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="landing-page">
+       <nav>
+        <figure>
+            <img id="personal-logo" src="./assets/jl2.jpg" alt="">
+        </figure>
+        <ul class="nav__link--list">
+            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a></li>
+            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a></li>
+            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a></li>
+            <li class="nav__link click"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a></li>
+        </ul>
+       </nav>
+       <header class="header">
+         <div class="header__content">
+            <h1 class="title">Hi</h1>
+            <h1 class="title kelly__green">I'm Jon.</h1>
+            <p class="header__para">
+                I'm a <b class="kelly__green">Software Developer</b> with a passion for creating innovative and efficient web applications.
+                <br>
+                Here's a bit more <span class="click" onclick="toggleModal()"><b class="kelly__green">about me</b></span>.
+            </p>
+            <div class="social__list">
+                <a href="https://www.linkedin.com/in/jonathan-lyszkowski-6a57512aa" target="_blank" class="social__link click">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/jlyszkowski?tab=repositories" target="_blank" class="social__link click">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="./assets/My Resume.pdf" target="_blank" class="social__link click">
+                    <i class="fa-solid fa-file-pdf"></i>
+                </a>
+            </div>
+         </div>
+       </header>
+       <button class="mail_btn click">
+         <i class="fas fa-envelope"></i>
+       </button>
+       <a href="#projects" class="scroll">
+         <div class="scroll__icon click"></div>
+       </a>
+       <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+            <p class="modal__para">
+                I'm a passionate <b class="kelly__green">frontend software developer</b> with experience in creating modern web applications using HTML, CSS, JavaScript, and React.
+                <br>
+                I have a strong foundation in web development principles and a keen eye for design, allowing me to create <b class="kelly__green">visually appealing</b> and <b class="kelly__green">user-friendly</b> interfaces.
+            </p>
+            <div class="modal__languages">
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./assets/HTML5_Badge.svg.png" alt="">
+                    <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./assets/css-131-722685.webp" alt="">
+                    <span class="language__name">CSS</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./assets/javascript-1-225993.webp" alt="">
+                    <span class="language__name">JavaScript</span>
+                </figure>
+                <figure class="modal__language">
+                    <img class="modal__language--img" src="./assets/react-3-1175109.webp" alt="">
+                    <span class="language__name">React</span>
+                </figure>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__title modal__title--contact">
+                Let's connect!
+            </h3>
+            <h4 class="modal__sub-title modal__sub-title--contact">
+                I'm currently open to new opportunities.  
+            </h4>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                    Send it my way
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner fa-spin kelly__green"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for reaching out! Looking forward to speaking with you soon.
+            </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+       </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="kelly__green">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Car Sales Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laborum obcaecati dolorum delectus magnam soluta velit quia molestias quas, iste nisi provident voluptas eius atque officia eaque odit recusandae explicabo?
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/google mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Google Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laborum obcaecati dolorum delectus magnam soluta velit quia molestias quas, iste nisi provident voluptas eius atque officia eaque odit recusandae explicabo?
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/chat.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Chat Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laborum obcaecati dolorum delectus magnam soluta velit quia molestias quas, iste nisi provident voluptas eius atque officia eaque odit recusandae explicabo?
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="" class="project__description--link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo--img" src="./assets/jl2.jpg" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://github.com/jlyszkowski?tab=repositories" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-lyszkowski-6a57512aa" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        LinkedIn
+                    </a>
+                    <a href="" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        Contact
+                    </a>
+                    <a href="./assets/My Resume.pdf" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright © 2026 Jonathan Lyszkowski</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
