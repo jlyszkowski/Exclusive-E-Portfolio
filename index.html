@@ -26,10 +26,10 @@
             <img id="personal-logo" src="./assets/jl2.jpg" alt="">
         </figure>
         <ul class="nav__link--list">
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a></li>
+            <li class="nav__link "><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a></li>
             <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a></li>
-            <li class="nav__link"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a></li>
-            <li class="nav__link click"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a></li>
+            <li class="nav__link" onclick="toggleModal()"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a></li>
+            <li class="nav__link click" onclick="toggleContrast()"><a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a></li>
         </ul>
        </nav>
        <header class="header">
@@ -39,7 +39,7 @@
             <p class="header__para">
                 I'm a <b class="kelly__green">Software Developer</b> with a passion for creating innovative and efficient web applications.
                 <br>
-                Here's a bit more <span class="click" onclick="toggleModal()"><b class="kelly__green">about me</b></span>.
+                Here's a bit more <b class="kelly__green click" onclick="toggleModal()">about me</b>.
             </p>
             <div class="social__list">
                 <a href="https://www.linkedin.com/in/jonathan-lyszkowski-6a57512aa" target="_blank" class="social__link click">
@@ -54,7 +54,7 @@
             </div>
          </div>
        </header>
-       <button class="mail_btn click">
+       <button class="mail__btn click" onclick="toggleModal()">
          <i class="fas fa-envelope"></i>
        </button>
        <a href="#projects" class="scroll">
@@ -89,6 +89,7 @@
             </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
                 Let's connect!
             </h3>
@@ -119,7 +120,6 @@
                 Thanks for reaching out! Looking forward to speaking with you soon.
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
        </div>
     </section>
     <section id="projects">
